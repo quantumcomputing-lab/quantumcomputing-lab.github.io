@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.4)  5 OCT 2023 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.4)  21 DEC 2023 19:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -182,87 +182,19 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (/home/samudra/Desktop/sjv_website_dev/html.sty
-Package: html 1996/02/01 v1.0 hypertext commands for latex2html (nd, hs)
-
-! LaTeX Error: Command \htmladdnormallinkfoot already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...htmladdnormallinkfoot}[2]{#1\footnote{#2}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \htmladdnormallink already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 \newcommand{\htmladdnormallink}[2]{#1}
-                                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \htmladdimg already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \newcommand{\htmladdimg}[1]{}
-                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+) (/home/samudra/texmf/tex/latex/html/html.sty
+Package: html 1999/07/19 v1.38 hypertext commands for latex2html (nd, hws, rrm)
 
 \c@lpart=\count267
 \c@lchapter=\count268
-\c@lsection=\count269
-\c@lsubsection=\count270
-\c@lsubsubsection=\count271
-\c@lparagraph=\count272
-\c@lsubparagraph=\count273
-\c@lsubsubparagraph=\count274
-\c@lequation=\count275
-
-! LaTeX Error: Command \hyperref already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.318 \newcommand{\hyperref}[4]{#2\ref{#4}#3}
-                                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \htmlref already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.325 \newcommand{\htmlref}[2]{#1}
-                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+\c@chapter=\count269
+\c@lsection=\count270
+\c@lsubsection=\count271
+\c@lsubsubsection=\count272
+\c@lparagraph=\count273
+\c@lsubparagraph=\count274
+\c@lsubsubparagraph=\count275
+\ptrfile=\write3
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -348,7 +280,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \sizebox=\box52
-\lthtmlwrite=\write3
+\lthtmlwrite=\write4
 (/usr/local/texlive/2021/texmf-dist/tex/latex/preview/preview.sty
 Package: preview 2017/04/24 12.3 (AUCTeX/preview-latex)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/luatex85/luatex85.sty
@@ -367,119 +299,29 @@ Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box55
-) (./images.aux
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FI' multiply defined.
-
-
-LaTeX Warning: Label `tbl:FG' multiply defined.
-
 )
+No file images.aux.
 \openout1 = `images.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-Package hyperref Info: Link coloring OFF on input line 153.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+Package hyperref Info: Link coloring OFF on input line 151.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -491,12 +333,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 153.
-LaTeX Info: Redefining \pageref on input line 153.
-LaTeX Info: Redefining \nameref on input line 153.
-(./images.out) (./images.out)
-\@outlinefile=\write4
-\openout4 = `images.out'.
+LaTeX Info: Redefining \ref on input line 151.
+LaTeX Info: Redefining \pageref on input line 151.
+LaTeX Info: Redefining \nameref on input line 151.
+\@outlinefile=\write5
+\openout5 = `images.out'.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -545,40 +386,43 @@ latex2htmlLength oddsidemargin=53.0pt
 latex2htmlLength evensidemargin=53.0pt
 
 
-:tex2html_wrap_indisplay277:lthtmlCropMarkHeight:=13.5pt
+:tex2html_wrap_indisplay80:lthtmlCropMarkHeight:=13.5pt
 
-:tex2html_wrap_indisplay277:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay80:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
 Preview: Tightpage -32890 -32890 32890 32890
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-:tex2html_wrap_indisplay278:lthtmlCropMarkHeight:=13.5pt
+:tex2html_wrap_indisplay81:lthtmlCropMarkHeight:=13.5pt
 
-:tex2html_wrap_indisplay278:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay81:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
 [2]
 
-:tex2html_wrap_indisplay279:lthtmlCropMarkHeight:=17.50009pt
+:tex2html_wrap_indisplay82:lthtmlCropMarkHeight:=17.50009pt
 
-:tex2html_wrap_indisplay279:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay82:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
 [3]
 
-:tex2html_wrap_indisplay280:lthtmlCropMarkHeight:=17.50009pt
+:tex2html_wrap_indisplay83:lthtmlCropMarkHeight:=17.50009pt
 
-:tex2html_wrap_indisplay280:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay83:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
 [4] (./images.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `images.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `images.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: Checksums for `images.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9848 strings out of 478353
- 153568 string characters out of 5848101
- 446980 words of memory out of 5000000
- 27843 multiletter control sequences out of 15000+600000
+ 10005 strings out of 478353
+ 155449 string characters out of 5848101
+ 448953 words of memory out of 5000000
+ 28006 multiletter control sequences out of 15000+600000
  405129 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,63p,228b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,63p,228b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
