@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.4)  21 DEC 2023 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.4)  6 JAN 2024 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,8 +299,7 @@ Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box55
-)
-No file images.aux.
+) (./images.aux)
 \openout1 = `images.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
@@ -336,6 +335,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 151.
 LaTeX Info: Redefining \pageref on input line 151.
 LaTeX Info: Redefining \nameref on input line 151.
+(./images.out) (./images.out)
 \@outlinefile=\write5
 \openout5 = `images.out'.
 
@@ -386,39 +386,33 @@ latex2htmlLength oddsidemargin=53.0pt
 latex2htmlLength evensidemargin=53.0pt
 
 
-:tex2html_wrap_indisplay80:lthtmlCropMarkHeight:=13.5pt
+:tex2html_wrap_indisplay86:lthtmlCropMarkHeight:=13.5pt
 
-:tex2html_wrap_indisplay80:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay86:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
 Preview: Tightpage -32890 -32890 32890 32890
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-:tex2html_wrap_indisplay81:lthtmlCropMarkHeight:=13.5pt
+:tex2html_wrap_indisplay87:lthtmlCropMarkHeight:=13.5pt
 
-:tex2html_wrap_indisplay81:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay87:lthtmlCropMarkDepth:=2.5pt:1ex:=4.30554pt
 [2]
 
-:tex2html_wrap_indisplay82:lthtmlCropMarkHeight:=17.50009pt
+:tex2html_wrap_indisplay88:lthtmlCropMarkHeight:=17.50009pt
 
-:tex2html_wrap_indisplay82:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay88:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
 [3]
 
-:tex2html_wrap_indisplay83:lthtmlCropMarkHeight:=17.50009pt
+:tex2html_wrap_indisplay89:lthtmlCropMarkHeight:=17.50009pt
 
-:tex2html_wrap_indisplay83:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
+:tex2html_wrap_indisplay89:lthtmlCropMarkDepth:=6.50009pt:1ex:=4.30554pt
 [4] (./images.aux)
-
-Package rerunfilecheck Warning: File `images.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `images.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `images.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10005 strings out of 478353
- 155449 string characters out of 5848101
- 448953 words of memory out of 5000000
+ 10011 strings out of 478353
+ 155515 string characters out of 5848101
+ 449041 words of memory out of 5000000
  28006 multiletter control sequences out of 15000+600000
  405129 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
