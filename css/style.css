@@ -628,6 +628,7 @@ a   { text-decoration: none; color: inherit; }
     .desktop-nav { display: none; }
     .btn-cta     { display: none; }
     .hamburger   { display: flex; }
+    .logo        { flex-shrink: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
     .footer-inner { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: 1 / -1; }
 }
