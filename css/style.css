@@ -184,6 +184,7 @@ a   { text-decoration: none; color: inherit; }
     border-radius: 6px;
     overflow: hidden;
     min-height: 380px;
+    min-width: 0;
     box-shadow: 0 16px 48px rgba(0,0,0,0.10);
 }
 .slab .slab-image img {
@@ -194,6 +195,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 /* ── Shared text slab styles ── */
+.slab .slab-text { min-width: 0; }
 .slab .slab-text h2 {
     font-family: var(--font-bengali);
     font-size: clamp(1.6rem, 2.8vw, 2.4rem);
@@ -367,12 +369,14 @@ a   { text-decoration: none; color: inherit; }
     align-items: center;
     justify-content: center;
     opacity: 0;
+    pointer-events: none;
     transform: translateY(8px);
     transition: opacity var(--transition), transform var(--transition), background var(--transition);
     z-index: 900;
 }
 .back-to-top.visible {
     opacity: 1;
+    pointer-events: auto;
     transform: translateY(0);
 }
 .back-to-top:hover { background: var(--saffron-dk); }
@@ -460,12 +464,133 @@ a   { text-decoration: none; color: inherit; }
 }
 
 /* ═══════════════════════════════════════════
+   HEADER CTA BUTTON
+═══════════════════════════════════════════ */
+.btn-cta {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: var(--saffron);
+    color: #fff;
+    padding: 0.5rem 1.1rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: background var(--transition);
+    flex-shrink: 0;
+}
+.btn-cta:hover { background: var(--saffron-dk); }
+
+/* ═══════════════════════════════════════════
+   CONTACT FORM SLAB
+═══════════════════════════════════════════ */
+.slab-contact {
+    background: var(--bg-dark);
+    padding: var(--section-py) 0;
+}
+
+.contact-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contact-inner h2 {
+    font-family: var(--font-bengali);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 600;
+    color: var(--saffron);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-bengali);
+    font-size: 1rem;
+    color: #fff;
+    outline: none;
+    transition: border-color var(--transition);
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus { border-color: var(--saffron); }
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: rgba(255,255,255,0.25); }
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.btn-submit {
+    background: var(--saffron);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-family: var(--font-bengali);
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background var(--transition);
+    margin-top: 0.5rem;
+    align-self: flex-start;
+}
+.btn-submit:hover    { background: var(--saffron-dk); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-note {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.75);
+    margin-top: 0.5rem;
+}
+
+.form-success {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    padding: 1.5rem 0;
+}
+
+.contact-mobile {
+    color: var(--saffron) !important;
+    font-weight: 700 !important;
+}
+
+/* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
 @media (max-width: 900px) {
     .slab-first-inner { padding: 3.5rem 1.5rem; }
     .slab-inner { grid-template-columns: 1fr; }
     .desktop-nav { display: none; }
+    .btn-cta     { display: none; }
     .hamburger   { display: flex; }
     .footer-inner { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: 1 / -1; }

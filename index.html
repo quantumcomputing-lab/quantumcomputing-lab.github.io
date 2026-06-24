@@ -6,6 +6,11 @@
     <title>4sh.education — বাংলা মাধ্যমে STEM শিক্ষা</title>
     <meta name="description" content="৪শ শিক্ষা — বাংলা মাধ্যমের ছাত্রছাত্রীদের জন্য বিজ্ঞান ও গণিত শিক্ষার পোর্টাল।">
 
+    <link rel="canonical" href="https://bengali.4sh.education/">
+    <link rel="alternate" hreflang="bn"        href="https://bengali.4sh.education/">
+    <link rel="alternate" hreflang="en"        href="https://4shfoundation.org/">
+    <link rel="alternate" hreflang="x-default" href="https://4shfoundation.org/">
+
     <!-- Open Graph -->
     <meta property="og:type"        content="website">
     <meta property="og:url"         content="https://bengali.4sh.education/">
@@ -13,6 +18,8 @@
     <meta property="og:title"       content="4sh.education — বাংলা মাধ্যমে STEM শিক্ষা">
     <meta property="og:description" content="৪শ শিক্ষা — বাংলা মাধ্যমের ছাত্রছাত্রীদের জন্য বিজ্ঞান ও গণিত শিক্ষার পোর্টাল।">
     <meta property="og:image"       content="https://bengali.4sh.education/img/img-hero.webp">
+    <meta property="og:image:width"  content="1400">
+    <meta property="og:image:height" content="788">
     <meta property="og:locale"      content="bn_IN">
 
     <!-- Twitter / X Card -->
@@ -22,6 +29,44 @@
     <meta name="twitter:image"       content="https://bengali.4sh.education/img/img-hero.webp">
 
     <!-- Bengali font — Hind Siliguri -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVZHNG0TMM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RVZHNG0TMM');
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "EducationalOrganization"],
+      "name": "4sh.education",
+      "url": "https://bengali.4sh.education/",
+      "logo": "https://bengali.4sh.education/favicon.svg",
+      "description": "বাংলা মাধ্যমের ছাত্রছাত্রীদের জন্য বিজ্ঞান ও গণিত শিক্ষার পোর্টাল।",
+      "inLanguage": "bn",
+      "foundingDate": "2026",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Samudra Dasgupta"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@4sh.education",
+        "contactType": "general"
+      },
+      "sameAs": [
+        "https://in.linkedin.com/in/samudra-dasgupta",
+        "https://4shfoundation.org"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
@@ -42,6 +87,7 @@
                 <a href="#about">4sh.edu</a>
                 <a href="#sitemap">Sitemap</a>
             </nav>
+            <a href="#contact" class="btn-cta">Contact Us</a>
             <button class="hamburger" aria-label="Open menu">
                 <span></span><span></span><span></span>
             </button>
@@ -55,6 +101,7 @@
             <a href="#home"    class="mobile-link">Home</a>
             <a href="#about"   class="mobile-link">4sh.edu</a>
             <a href="#sitemap" class="mobile-link">Sitemap</a>
+            <a href="#contact" class="mobile-link contact-mobile">Contact Us</a>
         </nav>
     </div>
     <div class="mobile-nav-overlay" id="navOverlay"></div>
@@ -87,14 +134,42 @@
         </section>
 
         <!-- ═══════════════════════════════════════
+             CONTACT FORM — INSTANCE 1
+        ═══════════════════════════════════════ -->
+        <section id="contact" class="slab slab-contact">
+            <div class="contact-inner">
+                <h2 class="fade-in">তোমার ভবিষ্যৎ, তোমার ভাষায়। আজ থেকেই শুরু করো।</h2>
+                <form id="contactForm1" class="contact-form fade-in" action="https://formspree.io/f/xreweaav" method="POST">
+                    <label>Name
+                        <input type="text" name="name" placeholder="তোমার নাম" required>
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" placeholder="তোমার ইমেইল" required>
+                    </label>
+                    <label>Phone number
+                        <input type="tel" name="phone" placeholder="তোমার ফোন নম্বর" required>
+                    </label>
+                    <label>ভবিষ্যতে কী করতে চাও?
+                        <textarea name="goal" placeholder="তোমার লক্ষ্য লেখো…" required></textarea>
+                    </label>
+                    <button type="submit" class="btn-submit">শুরু করা যাক</button>
+                    <p class="form-note">Accelerate your career. No excuses.</p>
+                </form>
+                <div id="contactSuccess1" class="form-success" hidden>
+                    <p>We'll be in touch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
              SLAB 2 — ADVERSITY
         ═══════════════════════════════════════ -->
         <section id="about" class="slab slab-alt">
             <div class="slab-inner slab-image-left">
                 <div class="slab-image">
-                    <img src="img/space.png"
+                    <img src="img/space.webp"
                          alt="Space — the infinite frontier"
-                         width="700" height="700"
+                         width="869" height="965"
                          loading="lazy">
                 </div>
                 <div class="slab-text fade-in">
@@ -108,6 +183,34 @@
         </section>
 
     </main>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT FORM — INSTANCE 2
+    ═══════════════════════════════════════ -->
+    <section class="slab slab-contact">
+        <div class="contact-inner">
+            <h2 class="fade-in">সব পড়ে নিয়েছো। এবার পরের পদক্ষেপটা নাও।</h2>
+            <form id="contactForm2" class="contact-form fade-in" action="https://formspree.io/f/xreweaav" method="POST">
+                <label>Name
+                    <input type="text" name="name" placeholder="তোমার নাম" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" placeholder="তোমার ইমেইল" required>
+                </label>
+                <label>Phone number
+                    <input type="tel" name="phone" placeholder="তোমার ফোন নম্বর" required>
+                </label>
+                <label>ভবিষ্যতে কী করতে চাও?
+                    <textarea name="goal" placeholder="তোমার লক্ষ্য লেখো…" required></textarea>
+                </label>
+                <button type="submit" class="btn-submit">শুরু করা যাক</button>
+                <p class="form-note">Accelerate your career. No excuses.</p>
+            </form>
+            <div id="contactSuccess2" class="form-success" hidden>
+                <p>We'll be in touch.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- ═══════════════════════════════════════
          FOOTER

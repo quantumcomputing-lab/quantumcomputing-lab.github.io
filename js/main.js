@@ -52,6 +52,37 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
+// ── Contact Forms (Formspree AJAX) ──
+[['contactForm1', 'contactSuccess1'], ['contactForm2', 'contactSuccess2']].forEach(([formId, successId]) => {
+    const form    = document.getElementById(formId);
+    const success = document.getElementById(successId);
+    form?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('.btn-submit');
+        btn.disabled = true;
+        btn.textContent = 'পাঠানো হচ্ছে…';
+        try {
+            const res = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            if (res.ok) {
+                form.hidden = true;
+                success.hidden = false;
+            } else {
+                btn.disabled = false;
+                btn.textContent = 'শুরু করা যাক';
+                alert('কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করো।');
+            }
+        } catch {
+            btn.disabled = false;
+            btn.textContent = 'শুরু করা যাক';
+            alert('কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করো।');
+        }
+    });
+});
+
 // ── Back to top ──
 const backToTop = document.getElementById('backToTop');
 
