@@ -10,13 +10,12 @@ Language: Bengali. Free. Fully online.
 Nothing below Class 7 — no serious study for children 12 or younger.
 
 
-FOUR PILLARS (top-level navigation)
--------------------------------------
+THREE PILLARS (top-level navigation)
+--------------------------------------
 
-1. মনের শক্তি         — Mental Resilience
-2. ক্যারিয়ার কৌশল   — Career Strategy
-3. স্কুল (৭-১০)      — School Syllabus, Class 7-10
-4. পরীক্ষার প্রস্তুতি — Competitive Exam Prep (Class 11-12+)
+1. মনের শক্তি       — Mental Resilience
+2. ক্যারিয়ার কৌশল — Career Strategy  (absorbs competitive exams + industry/worklife)
+3. ভিত্তি (৭-১০)   — Foundations, Class 7-10  [coming soon]
 
 Students naturally move left to right as they age.
 Pillars 1 and 2 serve all students throughout their journey.
@@ -30,35 +29,34 @@ Pillar 1 — Mental Resilience
   Topics: exam stress, focus, study habits, failure & recovery, mindset
 
 Pillar 2 — Career Strategy
-  Audience: Everyone (content may be split by class level later)
-  Topics: understanding the IIT/NEET/college system, financial aid,
-          life after engineering/medicine, how to choose a path
+  Audience: Everyone
+  Scope: Everything after "what should I study" — competitive exam paths,
+         professional career paths, industry, MBA, entrepreneurship.
+  Structure:
+    ├── Competitive Exams  (seat-factor exams — limited seats, ranked competition)
+    │   Boards (ISC/CBSE) do NOT qualify — marks-only, not seat-limited.
+    │     ├── IIT-JEE
+    │     │   ├── About the exam (seats, dates, financial aid, college system)
+    │     │   ├── Study roadmap (what to study, in what order, by when)
+    │     │   ├── Mathematics  → 35 chapters
+    │     │   ├── Physics      → chapters
+    │     │   └── Chemistry    → chapters
+    │     ├── NEET
+    │     │   ├── About the exam
+    │     │   ├── Biology      → chapters
+    │     │   ├── Physics      → SAME content as IIT-JEE Physics, linked not duplicated
+    │     │   └── Chemistry    → SAME content as IIT-JEE Chemistry, linked not duplicated
+    │     └── (GATE, NET, SET, TET, civil services, recruitment exams — added later)
+    │
+    └── Worklife  (L5 — industry, professional, post-degree)
+          Resume & LinkedIn · Interview prep · Management consulting
+          Entrepreneurship · MBA (CAT/GMAT) · Corporate careers
 
 Pillar 3 — Foundations (Class 7-10)
   Audience: Class 7-10 students
   Purpose: school syllabus help + board exam prep (ISC, CBSE, state boards)
   Content: largely separate from Class 11-12 (not a simpler version of it)
   Status: NOT YET READY — placeholder at launch
-
-Pillar 4 — Competitive Exams
-  Scope: Any exam with a "seat factor" — limited seats, ranked competition.
-         Boards (ISC/CBSE) do NOT qualify — they are marks-only, not seat-limited.
-  Audience: Students targeting IIT-JEE, NEET, GATE, NET, SET, TET, PhD/JRF, and
-            all engineering/medical/civil service entrance exams
-  Structure:
-    └── Choose exam
-        ├── IIT-JEE
-        │   ├── About the exam (seats, dates, financial aid, college system)
-        │   ├── Study roadmap (what to study, in what order, by when)
-        │   ├── Mathematics  → 35 chapters
-        │   ├── Physics      → chapters
-        │   └── Chemistry    → chapters
-        ├── NEET
-        │   ├── About the exam
-        │   ├── Biology      → chapters
-        │   ├── Physics      → SAME content as IIT-JEE Physics, linked not duplicated
-        │   └── Chemistry    → SAME content as IIT-JEE Chemistry, linked not duplicated
-        └── (more exams added later)
 
 
 CONTENT REUSE PRINCIPLE
@@ -209,17 +207,22 @@ Entry point rule:
   (/iit-jee, /gate, /net etc.), learn about the exam fully, then follow
   chapter links. The exam page controls which chapters appear and to what depth.
 
-The 5 depth levels:
+The 6 depth levels:
 
-  Level  Tag  Nickname    Exam examples              Academic descriptor
-  -----  ---  ----------  -------------------------  -------------------------
-  0      L0   Noob        ISC, CBSE, State Boards    Foundation / Board
-  1      L1   Basics      IIT-JEE, NEET, engg        Competitive / Entrance
-                          entrance exams
-  2      L2   Competence  GATE, degree-level          Undergraduate
-                          competitive exams
-  3      L3   Mastery     NET, SET, TET               Postgraduate / Masters
-  4      L4   Zen         PhD, JRF                    Research
+  Level  Tag  Nickname    Exam / Content examples          Descriptor
+  -----  ---  ----------  -------------------------------  ----------------------
+  0      L0   Noob        ISC, CBSE, State Boards          Foundation / Board
+  1      L1   Basics      IIT-JEE, NEET, engg entrances    Competitive / Entrance
+  2      L2   Competence  GATE, degree-level exams         Undergraduate
+  3      L3   Mastery     NET, SET, TET                    Postgraduate / Masters
+  4      L4   Zen         PhD, JRF                         Research
+  5      L5   Worklife    Resume, interviews, CAT/GMAT,    Industry / Professional
+                          consulting, entrepreneurship,
+                          MBA, corporate careers
+
+  Note: L5 is orthogonal to the academic depth axis (L0-L4). It does not
+  deepen a subject — it applies knowledge to real-world career contexts.
+  L5 content lives under the Worklife sub-section of Career Strategy.
 
 Seat factor rule:
   Only exams with limited seats and ranked competition belong in Pillars 1-4.
