@@ -164,24 +164,30 @@ Branching model: Simple two-branch
   master  →  production (GitHub Pages deploys from here, always live)
   dev     →  feature work accumulates here until ready to ship
 
+Local folder layout (git worktree — one repo, two directories):
+
+  Bengali_Site/         ← master (prod)
+  Bengali_Site_dev/     ← dev
+
+  Foundation_Site/4sh-socrates.github.io/   ← master (prod)
+  Foundation_Site_dev/                      ← dev
+
+  Both folders share the same .git — no duplicate clones.
+  Changes committed in one are immediately visible in the other via git.
+
 Hotfix workflow (small daily nits):
-  1. Branch from master:  git checkout -b hotfix/fix-name master
-  2. Make the fix
-  3. Merge to master:     git checkout master && git merge hotfix/fix-name
-  4. Push to prod:        git push origin master
-  5. Sync back to dev:    git checkout dev && git merge master
-  6. Delete hotfix branch
+  1. Work in Bengali_Site/ (already on master)
+  2. Make the fix, commit, push origin master
+  3. Sync to dev:  cd Bengali_Site_dev && git merge master
 
 Feature workflow (larger dev work):
-  1. Work directly on dev (or branch feature/xxx off dev for parallel work)
-  2. Accumulate until ready
-  3. Merge to master when ready to ship
+  1. Work in Bengali_Site_dev/ (on dev branch)
+  2. Commit and push origin dev as you go
+  3. When ready to ship: cd Bengali_Site && git merge dev && git push origin master
 
 Rules:
   - master is always deployable — never commit broken code directly to master
   - dev never auto-deploys — safe to leave work-in-progress there
   - Do not use Gitflow (release/*, develop, etc.) — overkill for this scale
-
-Setup (run once in each repo):
-  git checkout -b dev
-  git push origin dev
+  - Never run "git checkout" inside a worktree to switch branches —
+    each worktree is locked to its branch; use the other folder instead
