@@ -88,32 +88,59 @@ WHAT NOT TO DO
   earlier version of Class 11-12 content. Treat them as separate pillars.
 
 
+HOMEPAGE SLAB STRUCTURE
+-----------------------
+Each slab is a full-width section on the homepage.
+Competitive exams each get their own slab — not grouped into one card.
+
+  Slab                  Status          Links to
+  --------------------  --------------  -------------------
+  Hero                  live            —
+  Mental Resilience     live            /resilience/
+  IIT-JEE               live            /iit-jee/
+  NEET                  live            /neet/
+  TET                   coming soon     —
+  Worklife              live            /worklife/
+  Foundations (7-10)    placeholder     —  (months away, no rush)
+  Founder               live            —
+  Contact / Footer      live            —
+
+  Future exams (GATE, NET, SET, civil services, recruitment etc.) each get
+  their own slab added when content is ready.
+
+
 LAUNCH PLAN
 -----------
 Phase 1 (now):
-  - Exam Prep → IIT-JEE → Mathematics → 35 chapters
-  - Pillars 1, 2, 3 as placeholders with "coming soon" treatment
+  - IIT-JEE → Mathematics → 35 chapters (content pipeline starting)
+  - NEET → Biology + shared Physics/Chemistry
+  - Mental Resilience, Worklife, Founder slabs on homepage
+  - TET, Foundations as placeholders
 
 Phase 2:
   - Add Physics and Chemistry under IIT-JEE
-  - Add NEET path (reuse Physics + Chemistry, add Biology)
-  - Flesh out Mental Resilience and Career Strategy content
+  - NEET Biology chapters
+  - Mental Resilience sub-pages (/resilience/...)
+  - Worklife sub-pages (/worklife/...)
 
 Phase 3:
-  - Add Class 7-10 school syllabus (Pillar 3)
-  - Add more competitive exams
+  - GATE slab + content
+  - NET/SET slab + content
+  - More competitive exams
 
 Phase 4+:
+  - Foundations (Class 7-10) content
   - Expand upward: undergraduate, postgraduate, PhD prep
 
 
 DECISIONS
 ---------
-- Career Strategy: unified. Use section headers within articles to address
-  different class levels. Split only if content volume demands it later.
+- Exam strategy, tips & tricks → per exam landing page (/iit-jee, /neet etc.)
+  Mock tests and past questions → per chapter page.
 
-- Exam strategy, tips & tricks → per exam (lives on /iit-jee, /neet landing pages).
-  Mock tests and past questions → per chapter (lives on the chapter page itself).
+- Mental Resilience and Worklife link out to sub-pages (not self-contained slabs).
+
+- Each competitive exam gets its own homepage slab (not grouped).
 
 
 #URL-AND-PAGE-STRUCTURE
@@ -126,34 +153,38 @@ Rules:
   - Exam pages are navigation/roadmap pages that LINK to content — not content themselves
 
 Page types:
-  1. Homepage        →  /
-  2. Exam landing    →  /iit-jee, /neet  (roadmap, exam info, links to chapters)
-  3. Subject index   →  /math/, /physics/, /chemistry/, /biology/
-  4. Chapter page    →  /math/logarithms, /physics/thermodynamics  (single source of truth)
-  5. Pillar index    →  /resilience/, /career/, /school/
-  6. Pillar article  →  /resilience/exam-stress, /career/financial-aid
+  1. Homepage             →  /
+  2. Exam landing         →  /iit-jee/, /neet/, /tet/  (roadmap, exam info, chapter links)
+  3. Pillar landing       →  /resilience/, /worklife/, /foundations/
+  4. Pillar article       →  /resilience/exam-stress, /worklife/resume-tips
+  5. Subject index        →  /math/, /physics/, /chemistry/, /biology/
+  6. Chapter page         →  /math/sets, /physics/thermodynamics  (single source of truth)
 
 Full URL map:
-  /                              Homepage (4 pillars)
+  /                              Homepage (slabs per topic)
 
-  /iit-jee                       IIT-JEE landing (roadmap, what to study, exam info)
-  /neet                          NEET landing
-
-  /math/                         Math chapter index
-  /math/logarithms               Chapter page
-  /math/sets-and-functions       Chapter page
-  /math/...                      (35 chapters total)
-
-  /physics/thermodynamics        Chapter page
-  /chemistry/periodic-table      Chapter page
+  /iit-jee/                      IIT-JEE landing  [live]
+  /neet/                         NEET landing     [live]
+  /tet/                          TET landing      [coming soon]
+  (more exams added as slabs: /gate/, /net/, /set/ ...)
 
   /resilience/                   Mental Resilience index
   /resilience/exam-stress        Article
 
-  /career/                       Career Strategy index
-  /career/financial-aid          Article
+  /worklife/                     Worklife index
+  /worklife/resume-tips          Article
+  /worklife/consulting           Article
 
-  /school/                       Class 7-10 index (placeholder at launch)
+  /math/                         Math chapter index
+  /math/sets                     Chapter page
+  /math/integration              Chapter page
+  /math/...                      (35 chapters total for IIT-JEE syllabus)
+
+  /physics/thermodynamics        Chapter page
+  /chemistry/periodic-table      Chapter page
+  /biology/cell-biology          Chapter page
+
+  /foundations/                  Class 7-10 index  [placeholder]
 
 
 #DEV-PROD-STRATEGY
