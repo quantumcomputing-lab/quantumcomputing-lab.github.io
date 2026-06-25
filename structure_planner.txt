@@ -34,14 +34,17 @@ Pillar 2 — Career Strategy
   Topics: understanding the IIT/NEET/college system, financial aid,
           life after engineering/medicine, how to choose a path
 
-Pillar 3 — School (Class 7-10)
+Pillar 3 — Foundations (Class 7-10)
   Audience: Class 7-10 students
-  Purpose: school syllabus help + board exam prep
+  Purpose: school syllabus help + board exam prep (ISC, CBSE, state boards)
   Content: largely separate from Class 11-12 (not a simpler version of it)
   Status: NOT YET READY — placeholder at launch
 
-Pillar 4 — Exam Prep (Class 11-12+)
-  Audience: IIT-JEE, NEET, and other competitive exam aspirants
+Pillar 4 — Competitive Exams
+  Scope: Any exam with a "seat factor" — limited seats, ranked competition.
+         Boards (ISC/CBSE) do NOT qualify — they are marks-only, not seat-limited.
+  Audience: Students targeting IIT-JEE, NEET, GATE, NET, SET, TET, PhD/JRF, and
+            all engineering/medical/civil service entrance exams
   Structure:
     └── Choose exam
         ├── IIT-JEE
@@ -191,3 +194,80 @@ Rules:
   - Do not use Gitflow (release/*, develop, etc.) — overkill for this scale
   - Never run "git checkout" inside a worktree to switch branches —
     each worktree is locked to its branch; use the other folder instead
+
+
+#CONTENT-DEPTH-SYSTEM
+----------------------
+
+Principle:
+  Every chapter starts at Level 0 and goes deeper.
+  Gates are inserted in the chapter content at the point where each exam's
+  syllabus ends. A student following an exam path is told exactly where to stop.
+
+Entry point rule:
+  A student NEVER browses chapters cold. They always enter via an exam page
+  (/iit-jee, /gate, /net etc.), learn about the exam fully, then follow
+  chapter links. The exam page controls which chapters appear and to what depth.
+
+The 5 depth levels:
+
+  Level  Tag  Nickname    Exam examples              Academic descriptor
+  -----  ---  ----------  -------------------------  -------------------------
+  0      L0   Noob        ISC, CBSE, State Boards    Foundation / Board
+  1      L1   Basics      IIT-JEE, NEET, engg        Competitive / Entrance
+                          entrance exams
+  2      L2   Competence  GATE, degree-level          Undergraduate
+                          competitive exams
+  3      L3   Mastery     NET, SET, TET               Postgraduate / Masters
+  4      L4   Zen         PhD, JRF                    Research
+
+Seat factor rule:
+  Only exams with limited seats and ranked competition belong in Pillars 1-4.
+  Boards (ISC/CBSE) are L0 prerequisite material only — they appear as
+  "Foundations" content, not as competitive exam paths.
+
+How a chapter gate looks (example: Integration):
+
+  [L0 content — basic antiderivatives, standard forms]
+
+  ══ L1 · BASICS ══════════════════════════════════════
+     IIT-JEE · NEET · Engineering Entrances
+     If you are targeting any of these, stop here.
+  ═════════════════════════════════════════════════════
+
+  [L1→L2 content — improper integrals, Beta/Gamma functions]
+
+  ══ L2 · COMPETENCE ══════════════════════════════════
+     GATE
+     If you are targeting GATE, stop here.
+  ═════════════════════════════════════════════════════
+
+  [L2→L3 content — Riemann theory, convergence theorems]
+
+  ══ L3 · MASTERY ═════════════════════════════════════
+     NET · SET · TET
+     If you are targeting NET/SET/TET, stop here.
+  ═════════════════════════════════════════════════════
+
+  [L3→L4 content — Lebesgue integration, measure theory]
+
+Topics with a hard ceiling (example: Linear Programming):
+  Content ends at L1. A note reads:
+  "This topic does not extend further in standard competitive exam syllabi."
+
+How an exam page uses the level system:
+  /iit-jee lists every chapter it needs, annotated with the target level:
+    Integration          L0 → L1
+    Linear Programming   L0 → L1  (topic ceiling)
+    Sets                 L0 → L1
+  The student knows exactly how deep to go in each chapter.
+
+Metadata stored per chapter-level pair:
+  - level number (0-4)
+  - level nickname (Noob / Basics / Competence / Mastery / Zen)
+  - exam tags (list of exam names that stop at this level)
+  - academic descriptor (Foundation / Competitive / Undergraduate / PG / Research)
+  - has_ceiling (true/false — does the topic end at this level?)
+
+Note: Bengali/regional language labels for levels to be decided later.
+      Structure is defined in English first.
