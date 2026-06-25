@@ -1,0 +1,187 @@
+4sh.education — Site Structure Plan
+=====================================
+Last updated: 2026-06-25
+
+
+AUDIENCE
+--------
+Government school and low-income students, Class 7 through PhD.
+Language: Bengali. Free. Fully online.
+Nothing below Class 7 — no serious study for children 12 or younger.
+
+
+FOUR PILLARS (top-level navigation)
+-------------------------------------
+
+1. মনের শক্তি         — Mental Resilience
+2. ক্যারিয়ার কৌশল   — Career Strategy
+3. স্কুল (৭-১০)      — School Syllabus, Class 7-10
+4. পরীক্ষার প্রস্তুতি — Competitive Exam Prep (Class 11-12+)
+
+Students naturally move left to right as they age.
+Pillars 1 and 2 serve all students throughout their journey.
+
+
+PILLAR BREAKDOWN
+----------------
+
+Pillar 1 — Mental Resilience
+  Audience: Everyone
+  Topics: exam stress, focus, study habits, failure & recovery, mindset
+
+Pillar 2 — Career Strategy
+  Audience: Everyone (content may be split by class level later)
+  Topics: understanding the IIT/NEET/college system, financial aid,
+          life after engineering/medicine, how to choose a path
+
+Pillar 3 — School (Class 7-10)
+  Audience: Class 7-10 students
+  Purpose: school syllabus help + board exam prep
+  Content: largely separate from Class 11-12 (not a simpler version of it)
+  Status: NOT YET READY — placeholder at launch
+
+Pillar 4 — Exam Prep (Class 11-12+)
+  Audience: IIT-JEE, NEET, and other competitive exam aspirants
+  Structure:
+    └── Choose exam
+        ├── IIT-JEE
+        │   ├── About the exam (seats, dates, financial aid, college system)
+        │   ├── Study roadmap (what to study, in what order, by when)
+        │   ├── Mathematics  → 35 chapters
+        │   ├── Physics      → chapters
+        │   └── Chemistry    → chapters
+        ├── NEET
+        │   ├── About the exam
+        │   ├── Biology      → chapters
+        │   ├── Physics      → SAME content as IIT-JEE Physics, linked not duplicated
+        │   └── Chemistry    → SAME content as IIT-JEE Chemistry, linked not duplicated
+        └── (more exams added later)
+
+
+CONTENT REUSE PRINCIPLE
+------------------------
+- Each chapter/topic lives in ONE place.
+- Multiple exam paths link to the same chapter — content is never duplicated.
+- A student entering via IIT-JEE and one entering via NEET reach the same
+  Physics chapter page. The page shows which exams it is relevant for.
+
+
+CHAPTER PAGE STRUCTURE (e.g. Logarithms)
+------------------------------------------
+  - Concept (theory, intuition, explained in Bengali)
+  - Worked examples
+  - Practice problems (graded by difficulty)
+  - Mock/past exam questions
+  - Tags: [IIT-JEE] [NEET] [Class 11] [Class 12]
+
+
+WHAT NOT TO DO
+--------------
+- Do not make "Class 11" or "Class 12" a top-level nav item.
+  Students think in terms of goals, not classes.
+- Do not expose the raw subject/chapter library as a front door.
+  That makes it an encyclopedia, not a learning path.
+- Do not duplicate content across exam paths.
+  Overlap between IIT and NEET subjects is handled by linking, not copying.
+- Class 7-10 content is school syllabus help — it is NOT a simpler or
+  earlier version of Class 11-12 content. Treat them as separate pillars.
+
+
+LAUNCH PLAN
+-----------
+Phase 1 (now):
+  - Exam Prep → IIT-JEE → Mathematics → 35 chapters
+  - Pillars 1, 2, 3 as placeholders with "coming soon" treatment
+
+Phase 2:
+  - Add Physics and Chemistry under IIT-JEE
+  - Add NEET path (reuse Physics + Chemistry, add Biology)
+  - Flesh out Mental Resilience and Career Strategy content
+
+Phase 3:
+  - Add Class 7-10 school syllabus (Pillar 3)
+  - Add more competitive exams
+
+Phase 4+:
+  - Expand upward: undergraduate, postgraduate, PhD prep
+
+
+DECISIONS
+---------
+- Career Strategy: unified. Use section headers within articles to address
+  different class levels. Split only if content volume demands it later.
+
+- Exam strategy, tips & tricks → per exam (lives on /iit-jee, /neet landing pages).
+  Mock tests and past questions → per chapter (lives on the chapter page itself).
+
+
+#URL-AND-PAGE-STRUCTURE
+------------------------
+
+Rules:
+  - URLs are always in English (Bengali content, English slugs)
+  - Content lives at one canonical URL — never duplicated across exam paths
+  - Max depth: 2 levels for content (/subject/chapter), 1 level for everything else
+  - Exam pages are navigation/roadmap pages that LINK to content — not content themselves
+
+Page types:
+  1. Homepage        →  /
+  2. Exam landing    →  /iit-jee, /neet  (roadmap, exam info, links to chapters)
+  3. Subject index   →  /math/, /physics/, /chemistry/, /biology/
+  4. Chapter page    →  /math/logarithms, /physics/thermodynamics  (single source of truth)
+  5. Pillar index    →  /resilience/, /career/, /school/
+  6. Pillar article  →  /resilience/exam-stress, /career/financial-aid
+
+Full URL map:
+  /                              Homepage (4 pillars)
+
+  /iit-jee                       IIT-JEE landing (roadmap, what to study, exam info)
+  /neet                          NEET landing
+
+  /math/                         Math chapter index
+  /math/logarithms               Chapter page
+  /math/sets-and-functions       Chapter page
+  /math/...                      (35 chapters total)
+
+  /physics/thermodynamics        Chapter page
+  /chemistry/periodic-table      Chapter page
+
+  /resilience/                   Mental Resilience index
+  /resilience/exam-stress        Article
+
+  /career/                       Career Strategy index
+  /career/financial-aid          Article
+
+  /school/                       Class 7-10 index (placeholder at launch)
+
+
+#DEV-PROD-STRATEGY
+------------------
+Applies to: Bengali_Site and Foundation_Site (both repos)
+
+Branching model: Simple two-branch
+
+  master  →  production (GitHub Pages deploys from here, always live)
+  dev     →  feature work accumulates here until ready to ship
+
+Hotfix workflow (small daily nits):
+  1. Branch from master:  git checkout -b hotfix/fix-name master
+  2. Make the fix
+  3. Merge to master:     git checkout master && git merge hotfix/fix-name
+  4. Push to prod:        git push origin master
+  5. Sync back to dev:    git checkout dev && git merge master
+  6. Delete hotfix branch
+
+Feature workflow (larger dev work):
+  1. Work directly on dev (or branch feature/xxx off dev for parallel work)
+  2. Accumulate until ready
+  3. Merge to master when ready to ship
+
+Rules:
+  - master is always deployable — never commit broken code directly to master
+  - dev never auto-deploys — safe to leave work-in-progress there
+  - Do not use Gitflow (release/*, develop, etc.) — overkill for this scale
+
+Setup (run once in each repo):
+  git checkout -b dev
+  git push origin dev

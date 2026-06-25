@@ -620,6 +620,93 @@ a   { text-decoration: none; color: inherit; }
 }
 
 /* ═══════════════════════════════════════════
+   PILLARS SECTION
+═══════════════════════════════════════════ */
+.slab-pillars { background: var(--bg-alt); }
+
+.pillars-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.pillars-inner > h2 {
+    font-family: var(--font-bengali);
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2.5rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.pillar-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    border: 1px solid #e2ddd7;
+    border-radius: 8px;
+    background: #fff;
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.pillar-card.pillar-live {
+    border-color: var(--saffron);
+    border-width: 2px;
+}
+.pillar-card.pillar-live:hover {
+    box-shadow: 0 8px 32px rgba(255,103,0,0.12);
+    transform: translateY(-3px);
+}
+
+.pillar-card.pillar-soon { opacity: 0.55; cursor: default; }
+
+.pillar-num {
+    font-family: var(--font-bengali);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--saffron);
+    line-height: 1;
+    margin-bottom: 1.25rem;
+    opacity: 0.35;
+}
+.pillar-card.pillar-live .pillar-num { opacity: 1; }
+
+.pillar-card h3 {
+    font-family: var(--font-bengali);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+.pillar-sub {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.pillar-action {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+.pillar-action.soon { color: #ccc; }
+.pillar-action.go   { color: var(--saffron); }
+
+/* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
 @media (max-width: 900px) {
@@ -631,6 +718,7 @@ a   { text-decoration: none; color: inherit; }
     .logo        { flex-shrink: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
     .footer-inner { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: 1 / -1; }
+    .pillars-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -639,4 +727,5 @@ a   { text-decoration: none; color: inherit; }
     .slab-first .slab-text h1 { font-size: 1.45rem; }
     .footer-inner { grid-template-columns: 1fr; }
     .back-to-top { bottom: 1.25rem; right: 1.25rem; }
+    .pillars-grid { grid-template-columns: 1fr; }
 }
