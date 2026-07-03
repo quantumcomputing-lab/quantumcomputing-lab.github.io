@@ -8,6 +8,8 @@
 :root {
     --saffron:     #FF6700;
     --saffron-dk:  #E05500;
+    --dark-red:    #8B1E1E;
+    --dark-red-dk: #6B1515;
     --charcoal:    #1E1E1E;
     --body-text:   #2D2D2D;
     --muted:       #666666;
@@ -228,6 +230,11 @@ a   { text-decoration: none; color: inherit; }
     color: var(--saffron);
     margin-top: 1.5rem;
 }
+a.slab-cta {
+    display: inline-block;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 
 /* ── Founder slab ── */
 .founder-credentials {
@@ -297,6 +304,7 @@ a   { text-decoration: none; color: inherit; }
 }
 .slab-dark .slab-text h2 { color: #fff; }
 .slab-dark .slab-text p  { color: rgba(255,255,255,0.82); }
+.slab-dark .slab-subhead { color: #fff; }
 
 /* ── Alt background slab ── */
 .slab-alt { background: var(--bg-alt); }
@@ -599,6 +607,22 @@ a   { text-decoration: none; color: inherit; }
 }
 .btn-submit:hover    { background: var(--saffron-dk); }
 .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btn-red {
+    display: inline-block;
+    background: var(--dark-red);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background var(--transition);
+    margin-top: 1.5rem;
+}
+.btn-red:hover { background: var(--dark-red-dk); }
 
 .form-note {
     font-family: var(--font-sans);
