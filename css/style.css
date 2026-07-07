@@ -305,6 +305,7 @@ a.slab-cta {
 .slab-dark .slab-text h2 { color: #fff; }
 .slab-dark .slab-text p  { color: rgba(255,255,255,0.82); }
 .slab-dark .slab-subhead { color: #fff; }
+.slab-dark .pull-quote   { color: #fff; }
 
 /* ── Alt background slab ── */
 .slab-alt { background: var(--bg-alt); }
