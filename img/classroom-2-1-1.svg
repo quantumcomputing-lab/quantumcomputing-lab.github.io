@@ -33,7 +33,7 @@
   <!-- Fist at arm end -->
   <circle cx="447" cy="231" r="9" fill="#FFFEF9" stroke="#1E1E1E" stroke-width="2.5"/>
   <!-- RULER: horizontal, saffron, extending left from fist toward student -->
-  <rect x="365" y="226" width="82" height="11" rx="2" fill="#FF6700" stroke="#1E1E1E" stroke-width="2.5"/>
+  <rect x="365" y="226" width="82" height="11" rx="2" fill="#A51C30" stroke="#1E1E1E" stroke-width="2.5"/>
   <line x1="380" y1="228" x2="380" y2="235" stroke="#1E1E1E" stroke-width="1.5"/>
   <line x1="396" y1="228" x2="396" y2="235" stroke="#1E1E1E" stroke-width="1.5"/>
   <line x1="412" y1="228" x2="412" y2="235" stroke="#1E1E1E" stroke-width="1.5"/>
@@ -87,9 +87,9 @@
   <path d="M385 371 Q391 367 397 373 Q402 369 399 378" stroke="#888" stroke-width="1.5" fill="none"/>
   <circle cx="116" cy="385" r="11" fill="#FFFEF9" stroke="#1E1E1E" stroke-width="2"/>
   <path d="M109 381 Q115 377 120 383 Q126 379 123 388" stroke="#888" stroke-width="1.5" fill="none"/>
-  <rect x="315" y="362" width="30" height="6" rx="2" fill="#FF6700" stroke="#1E1E1E" stroke-width="2"
+  <rect x="315" y="362" width="30" height="6" rx="2" fill="#A51C30" stroke="#1E1E1E" stroke-width="2"
         transform="rotate(-15,330,365)"/>
-  <rect x="348" y="350" width="28" height="6" rx="2" fill="#FF6700" stroke="#1E1E1E" stroke-width="2"
+  <rect x="348" y="350" width="28" height="6" rx="2" fill="#A51C30" stroke="#1E1E1E" stroke-width="2"
         transform="rotate(-38,362,353)"/>
   <path d="M370 344 L378 338 L374 348 Z" fill="#1E1E1E"/>
 

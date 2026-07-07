@@ -1,6 +1,6 @@
 /* ── Design tokens (match Bengali_Site) ─────────────────────────────── */
 :root {
-  --saffron:   #FF6700;
+  --crimson:   #A51C30;
   --charcoal:  #1E1E1E;
   --bg:        #FFFEF9;
   --bg-alt:    #F5F0E8;
@@ -40,9 +40,9 @@ body {
   font-family: 'Courier New', monospace;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--saffron);
+  color: var(--crimson);
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(255,103,0,0.4);
+  border: 1px solid rgba(165,28,48,0.4);
   padding: 0.25rem 0.8rem;
   border-radius: 20px;
 }
@@ -117,7 +117,7 @@ body {
   flex-shrink: 0;
   width: 4px;
   height: 2.4rem;
-  background: var(--saffron);
+  background: var(--crimson);
   border-radius: 2px;
 }
 .slab-divider h2 {
@@ -131,7 +131,7 @@ body {
 .sub-heading {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--saffron);
+  color: var(--crimson);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
@@ -157,8 +157,8 @@ body {
 .mblock .mbody p { margin-bottom: 0.7rem; font-size: 1.1rem; line-height: 1.85; }
 .mblock .mbody p:last-child { margin-bottom: 0; }
 
-.mblock.theorem  { border-color: var(--saffron); background: rgba(255,103,0,0.04); }
-.mblock.theorem .mlabel  { color: var(--saffron); }
+.mblock.theorem  { border-color: var(--crimson); background: rgba(165,28,48,0.04); }
+.mblock.theorem .mlabel  { color: var(--crimson); }
 
 .mblock.lemma    { border-color: #2C7A4B; background: rgba(44,122,75,0.04); }
 .mblock.lemma .mlabel    { color: #2C7A4B; }
@@ -253,7 +253,7 @@ body {
 .footer-brand {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--saffron);
+  color: var(--crimson);
   margin-bottom: 0.4rem;
   font-family: 'Georgia', serif;
 }
@@ -263,7 +263,7 @@ body {
   position: fixed; bottom: 2rem; right: 2rem;
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: var(--saffron);
+  background: var(--crimson);
   color: #fff;
   border: none; cursor: pointer;
   font-size: 1.1rem;

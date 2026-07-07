@@ -38,7 +38,7 @@
   <!-- Fist -->
   <circle cx="524" cy="107" r="9" fill="#FFFEF9" stroke="#1E1E1E" stroke-width="2.5"/>
   <!-- RULER: saffron, vertical, gripped above fist -->
-  <rect x="519" y="36" width="11" height="71" rx="2" fill="#FF6700" stroke="#1E1E1E" stroke-width="2.5"/>
+  <rect x="519" y="36" width="11" height="71" rx="2" fill="#A51C30" stroke="#1E1E1E" stroke-width="2.5"/>
   <line x1="521" y1="50" x2="528" y2="50" stroke="#1E1E1E" stroke-width="1.5"/>
   <line x1="521" y1="63" x2="528" y2="63" stroke="#1E1E1E" stroke-width="1.5"/>
   <line x1="521" y1="76" x2="528" y2="76" stroke="#1E1E1E" stroke-width="1.5"/>
@@ -102,9 +102,9 @@
   <circle cx="116" cy="385" r="11" fill="#FFFEF9" stroke="#1E1E1E" stroke-width="2"/>
   <path d="M109 381 Q115 377 120 383 Q126 379 123 388" stroke="#888" stroke-width="1.5" fill="none"/>
   <!-- Broken pencil — two snapped halves, saffron -->
-  <rect x="315" y="362" width="30" height="6" rx="2" fill="#FF6700" stroke="#1E1E1E" stroke-width="2"
+  <rect x="315" y="362" width="30" height="6" rx="2" fill="#A51C30" stroke="#1E1E1E" stroke-width="2"
         transform="rotate(-15,330,365)"/>
-  <rect x="348" y="350" width="28" height="6" rx="2" fill="#FF6700" stroke="#1E1E1E" stroke-width="2"
+  <rect x="348" y="350" width="28" height="6" rx="2" fill="#A51C30" stroke="#1E1E1E" stroke-width="2"
         transform="rotate(-38,362,353)"/>
   <!-- pencil tip on lower half -->
   <path d="M370 344 L378 338 L374 348 Z" fill="#1E1E1E"/>
