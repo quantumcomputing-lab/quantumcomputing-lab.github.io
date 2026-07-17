@@ -684,6 +684,13 @@ a.slab-cta {
     text-align: center;
 }
 
+.btn-red-group .btn-disabled {
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.55);
+    cursor: not-allowed;
+}
+.btn-red-group .btn-disabled:hover { background: rgba(255,255,255,0.08); }
+
 .form-note {
     font-family: var(--font-sans);
     font-size: 0.82rem;
