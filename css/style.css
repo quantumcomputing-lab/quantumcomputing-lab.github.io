@@ -749,60 +749,35 @@ a.slab-cta {
     user-select: none;
 }
 
-/* ── Card: two visible at a time on desktop, framed like a mounted print ── */
+/* ── Card: two visible at a time on desktop. The infographics already carry
+   their own finished design (ink/ivory/rust palette, title, hairline box),
+   so the site wrapper stays out of the way — a clean frame, not a second
+   frame competing with the one already inside the image. ── */
 .carousel-item {
     flex: 0 0 auto;
     width: calc(50% - 0.75rem);
     scroll-snap-align: start;
     display: block;
-    position: relative;
-    border-radius: 14px;
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.08);
-    padding: 14px 14px 0;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-    transition: transform var(--transition), box-shadow var(--transition);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(31,39,51,0.10);
+    box-shadow: 0 10px 28px rgba(31,39,51,0.10);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 .carousel-item:hover,
 .carousel-item:focus-visible {
-    transform: translateY(-4px);
-    box-shadow: 0 22px 50px rgba(0,0,0,0.18);
-}
-.carousel-item::after {
-    /* Inner mat line — a thin accent border set inside the white padding,
-       giving the card a mounted-print / museum-placard feel. */
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    right: 8px;
-    bottom: 52px;
-    border: 1px solid rgba(165, 28, 48, 0.22);
-    border-radius: 8px;
-    pointer-events: none;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 44px rgba(31,39,51,0.16);
+    border-color: rgba(165,28,48,0.35);
 }
 .carousel-item img {
-    position: relative;
     width: 100%;
     height: auto;
     aspect-ratio: 1560 / 1174;
     object-fit: cover;
     display: block;
-    border-radius: 6px;
     -webkit-user-drag: none;
     user-select: none;
-}
-.carousel-caption {
-    display: block;
-    font-family: var(--font-sans);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    color: var(--charcoal);
-    text-align: center;
-    padding: 0.85rem 0.5rem;
-    margin-top: 0.5rem;
-    border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 /* ── Tall flat-triangle scroll prompts (deliberately not circular chevrons) ── */
@@ -810,23 +785,24 @@ a.slab-cta {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 52px;
-    height: 180px;
-    border-radius: 26px;
+    width: 48px;
+    height: 168px;
+    border-radius: 24px;
     background: #fff;
-    border: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+    border: 1px solid rgba(31,39,51,0.12);
+    box-shadow: 0 6px 20px rgba(31,39,51,0.14);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     cursor: pointer;
     z-index: 2;
-    transition: background var(--transition), box-shadow var(--transition), opacity var(--transition);
+    transition: background var(--transition), box-shadow var(--transition), border-color var(--transition), opacity var(--transition);
 }
 .carousel-arrow:hover {
     background: var(--bg-alt);
-    box-shadow: 0 10px 26px rgba(0,0,0,0.18);
+    border-color: rgba(165,28,48,0.35);
+    box-shadow: 0 10px 26px rgba(31,39,51,0.18);
 }
 .carousel-arrow-left  { left: 0; }
 .carousel-arrow-right { right: 0; }
@@ -834,11 +810,11 @@ a.slab-cta {
     content: "";
     width: 0;
     height: 0;
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
 }
-.carousel-arrow-left::before  { border-right: 24px solid var(--crimson); margin-right: 4px; }
-.carousel-arrow-right::before { border-left: 24px solid var(--crimson); margin-left: 4px; }
+.carousel-arrow-left::before  { border-right: 22px solid var(--crimson); margin-right: 4px; }
+.carousel-arrow-right::before { border-left: 22px solid var(--crimson); margin-left: 4px; }
 .carousel-arrow.is-disabled { opacity: 0.3; cursor: default; pointer-events: none; }
 
 /* ═══════════════════════════════════════════
@@ -868,8 +844,7 @@ a.slab-cta {
     .footer-inner { grid-template-columns: 1fr; }
     .carousel-header { padding: 0 1.25rem; }
     .carousel-wrap { padding: 0 2.4rem; }
-    .carousel-item { width: 82vw; padding: 10px 10px 0; }
-    .carousel-item::after { top: 6px; left: 6px; right: 6px; }
+    .carousel-item { width: 82vw; }
     .carousel-arrow { width: 36px; height: 96px; border-radius: 18px; }
     .carousel-arrow::before { border-top-width: 10px; border-bottom-width: 10px; }
     .carousel-arrow-left::before  { border-right-width: 15px; }
