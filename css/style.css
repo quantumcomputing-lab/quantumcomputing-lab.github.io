@@ -711,6 +711,137 @@ a.slab-cta {
 }
 
 /* ═══════════════════════════════════════════
+   INFOGRAPHIC CAROUSEL
+═══════════════════════════════════════════ */
+.carousel-header {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+.carousel-header .section-label { margin-bottom: 0.75rem; }
+.carousel-header h2 { margin-bottom: 0.75rem; }
+.carousel-header .slab-subhead { margin-bottom: 0 !important; }
+
+.carousel-wrap {
+    position: relative;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 4.5rem;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem 0.25rem 1rem;
+    scrollbar-width: none;
+    cursor: grab;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-track.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+    user-select: none;
+}
+
+/* ── Card: two visible at a time on desktop, framed like a mounted print ── */
+.carousel-item {
+    flex: 0 0 auto;
+    width: calc(50% - 0.75rem);
+    scroll-snap-align: start;
+    display: block;
+    position: relative;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 14px 14px 0;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+.carousel-item:hover,
+.carousel-item:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+}
+.carousel-item::after {
+    /* Inner mat line — a thin accent border set inside the white padding,
+       giving the card a mounted-print / museum-placard feel. */
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 52px;
+    border: 1px solid rgba(165, 28, 48, 0.22);
+    border-radius: 8px;
+    pointer-events: none;
+}
+.carousel-item img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1560 / 1174;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.carousel-caption {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--charcoal);
+    text-align: center;
+    padding: 0.85rem 0.5rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* ── Tall flat-triangle scroll prompts (deliberately not circular chevrons) ── */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 180px;
+    border-radius: 26px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+    transition: background var(--transition), box-shadow var(--transition), opacity var(--transition);
+}
+.carousel-arrow:hover {
+    background: var(--bg-alt);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.18);
+}
+.carousel-arrow-left  { left: 0; }
+.carousel-arrow-right { right: 0; }
+.carousel-arrow::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}
+.carousel-arrow-left::before  { border-right: 24px solid var(--crimson); margin-right: 4px; }
+.carousel-arrow-right::before { border-left: 24px solid var(--crimson); margin-left: 4px; }
+.carousel-arrow.is-disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+
+/* ═══════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════ */
 @media (max-width: 900px) {
@@ -722,6 +853,12 @@ a.slab-cta {
     .logo        { flex-shrink: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
     .footer-inner { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: 1 / -1; }
+    .carousel-wrap { padding: 0 3rem; }
+    .carousel-item { width: min(360px, 82vw); }
+    .carousel-arrow { width: 42px; height: 130px; border-radius: 21px; }
+    .carousel-arrow::before { border-top-width: 13px; border-bottom-width: 13px; }
+    .carousel-arrow-left::before  { border-right-width: 20px; }
+    .carousel-arrow-right::before { border-left-width: 20px; }
 }
 
 @media (max-width: 600px) {
@@ -729,6 +866,14 @@ a.slab-cta {
     .slab-first-inner { padding: 2.5rem 1.25rem; }
     .slab-first .slab-text h1 { font-size: 1.45rem; }
     .footer-inner { grid-template-columns: 1fr; }
+    .carousel-header { padding: 0 1.25rem; }
+    .carousel-wrap { padding: 0 2.4rem; }
+    .carousel-item { width: 82vw; padding: 10px 10px 0; }
+    .carousel-item::after { top: 6px; left: 6px; right: 6px; }
+    .carousel-arrow { width: 36px; height: 96px; border-radius: 18px; }
+    .carousel-arrow::before { border-top-width: 10px; border-bottom-width: 10px; }
+    .carousel-arrow-left::before  { border-right-width: 15px; }
+    .carousel-arrow-right::before { border-left-width: 15px; }
     .back-to-top { bottom: 1.25rem; right: 1.25rem; }
     .btn-whatsapp { font-size: 0.95rem; padding: 1rem 1.75rem; white-space: nowrap; }
     .whatsapp-icon { width: 22px; height: 22px; }
